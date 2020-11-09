@@ -327,16 +327,79 @@ section .title::after{
     content: "what i know";
 }
 
+.skills .skills-content .column{
+    width: calc(50% - 30px);
+}
+.skills .skills-content .left .text{
+    font-size: 20 px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.skills .skills-content .left p{
+    text-align: justify;
+}
+.skills .skills-content .left a{
+    display: inline-block;
+    color: white;
+    background: #fd007f;
+    /* Change this */
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 20px;
+    border-radius: 6px;  
+    border: 2px solid  #fd007f;
+    transition: all 0.3s ease;
+}
+.skills .skills-content .left a:hover{
+    color: #fd007f;
+    background: none;
+}
+.skills .skills-content .right .bars{
+    margin-bottom: 15px;
 
+}
+.skills .skills-content .right .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .skills-content .right span{
+    font-weight: 500;
+    font-size: 18px ;
+}
+.skills .skills-content .right .line{
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+.skills .skills-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #fd007f;
+}
+.skills .skills-content .right .html::before{
+    width: 90%;
+}
+.skills .skills-content .right .css::before{
+    width: 60%;
+}
+.skills .skills-content .right .js::before{
+    width: 80%;
+}
+.skills .skills-content .right .php::before{
+    width: 50%;
+}
+.skills .skills-content .right .mysql::before{
+    width: 70%;
+}
 
-
-
-
-
-
-
-
-
+  
 
 
 
@@ -448,6 +511,10 @@ section .title::after{
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
+    .skills .skills-content .column{
+        width: 100%;
+        margin-bottom: 35px;
+    }
 }
 
 @media (max-width:690px){
@@ -465,9 +532,11 @@ section .title::after{
         font-size: 20px;
         /* padding: 8px 20px; */
     }
-    .service .service-content .card{
+    .service .service-content .card,
+    .skills .skills-content .column{
         width: 100%;
     }
+    
 
 }
 @media (max-width:500px){
