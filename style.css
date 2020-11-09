@@ -174,13 +174,14 @@
 
 /* All similar content code */
 /*Special---------adding 2 divs together  */
-.about , .service , .skills, .teams{
+.about , .service , .skills, .teams, .contact{
     font-family: 'Poppins',sans-serif;
     /* padding: 100px 0; */
 }
 .about .about-content,
 .service .service-content,
-.skills .skills-content{
+.skills .skills-content,
+.contact .contact-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -405,13 +406,32 @@ section .title::after{
 .teams .title::after{
     content: "who with me";
 }
-.teams .carousel .card{
 
-}
 .teams .carousel .card{
     background: #222;
     border-radius: 6px;
     padding: 25px 35px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.teams .carousel .card:hover{
+    background: #fd007f;
+}
+.teams .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.teams .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+teams .carousel .card:hover .box{
+    transform: scale(1.05);
 }
 .teams .carousel .card img{
     width: 150px;
@@ -419,19 +439,84 @@ section .title::after{
     object-fit: cover;
     border-radius: 50%;
     border: 5px solid #fd007f;
+    transition: all 0.3s ease;
+}
+.teams .carousel .card:hover img{
+    border-color: white;
 }
 
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none !important;
+    border-radius: 50%;
+    border: 2px solid #fd007f!important;
+}
+.owl-dot.active{
+    width: 35px;
+    border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover{
+    background: #fd007f!important;
+}
 
+/* -------Contact me-------- */
 
+.contact .title::after{
+    content: 'get in touch';
+}
 
+.contact .contact-content .column{
+    width: calc(50% - 30px);
+}
+.contact .contact-content .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.contact .contact-content .left p{
+    text-align: justify;
+}
+.contact .contact-content .left .icons{
+    margin: 10px 0;
+}
+.contact .contact-content .row{
+     display: flex;
+     height: 65px;
+     align-items: center;
+}
+.contact .contact-content .row .info{
+    margin-left: 30px;
+}
+.contact .contact-content .row  i{
+    font-size: 25px;
+    color: #fd007f;
+}
+.contact .contact-content .info .head{
+    font-weight: 500;
+}
+.contact .contact-content .info .sub-title{
+    color: #333;
+}
+.contact .right form .fields{
+    display: flex;
+}
+.contact .right form .field,
+.contact .right form .fields .field{
+    height: 45px;
+    width: 100%;
+}
 
-
-
-
-
-
-
-
+.contact .right form .field input{
+    height: 100%;
+    width: 100%;
+}
 
 
 
