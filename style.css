@@ -174,7 +174,7 @@
 
 /* All similar content code */
 /*Special---------adding 2 divs together  */
-.about , .service , .skills{
+.about , .service , .skills, .teams{
     font-family: 'Poppins',sans-serif;
     /* padding: 100px 0; */
 }
@@ -275,15 +275,17 @@ section .title::after{
 }
 
 /* -------Service---------- */
-.service{
+.service, .teams{
     color: white;
     background: black;
 }
 
-.service .title::before{
+.service .title::before,
+.teams .title::before{
     background: white;
 }
-.service .title::after{
+.service .title::after,
+.teams .title::after{
     background: black;
     content: "what i provide";
 }
@@ -399,7 +401,25 @@ section .title::after{
     width: 70%;
 }
 
-  
+  /* teams */
+.teams .title::after{
+    content: "who with me";
+}
+.teams .carousel .card{
+
+}
+.teams .carousel .card{
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+}
+.teams .carousel .card img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #fd007f;
+}
 
 
 
