@@ -75,7 +75,7 @@ html{
     justify-content: space-between;
 }
 .navbar .logo a {
-    color: whitesmoke;
+    color: white;
     font-size: 50px;
     font-weight: 600;
 }
@@ -97,6 +97,7 @@ html{
 }
 
 .navbar .menu li a {
+    display: block;
     color: #f32f91;
     font-size: 18px;
     font-weight: 500;
@@ -149,7 +150,7 @@ html{
     font-family: 'Ubuntu','sans-serif';
 }
 .home .max-width{
-    margin: 450px 0 auto 50px;  
+    margin: 350px 0 auto 50px;  
 }
 
 .home .home-content .text-1{
@@ -171,7 +172,7 @@ html{
 .home .home-content .text-3{
     font-size: 40px;
     margin: 5px 0;
-    color: blanchedalmond;
+    color: white;
     text-align: center;
 }
 
