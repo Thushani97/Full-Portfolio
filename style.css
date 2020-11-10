@@ -6,6 +6,9 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 /* .row{
     display: flex;
@@ -112,7 +115,30 @@
     cursor: pointer;
     display: none;
 }
+.scroll-up-btn{
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: #fd007f;
+    right: 30px;
+    bottom: 10px;
+    text-emphasis: center;
+    line-height: 45px;
+    color: white;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
 
+.scroll-up-btn.show{
+    opacity: 1;
+    bottom: 30px;
+    pointer-events: auto;
+}
 /*  -------Home-------- */
 .home{
     display: flex;
@@ -174,7 +200,7 @@
 
 /* All similar content code */
 /*Special---------adding 2 divs together  */
-.about , .service , .skills, .teams, .contact{
+.about , .service , .skills, .teams, .contact, footer{
     font-family: 'Poppins',sans-serif;
     /* padding: 100px 0; */
 }
@@ -511,18 +537,68 @@ teams .carousel .card:hover .box{
 .contact .right form .fields .field{
     height: 45px;
     width: 100%;
+    margin-bottom: 15px;
 }
-
-.contact .right form .field input{
-    height: 100%;
+.contact .right form .textarea{
+    height: 80px;
     width: 100%;
 }
+.contact .right form .name{
+    margin-right: 10px;
+}
+.contact .right form .email{
+    margin-left: 10px;
+}
+.contact .right form .field input,
+.contact .right form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Poppins',sans-serif;     
+}
+.contact .right form .textarea textarea{
+    padding-top: 10px;
+    resize: none;
+}
+.contact .right form .button{
+    height: 47px;
+    width: 170px;
+}
+.contact .right form .button button{
+    height: 100%;
+    width: 100%;
+    border: 2px solid #fd007f;
+    background: #fd007f;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.contact .right form .button button:hover{
+    color: #fd007f;
+    background: none;
+}
 
+/* footer */
 
-
-
-
-
+footer{
+    background: #111;
+    padding: 20px 23px;
+    color: #fff;
+}
+footer span a{
+    color: #fd007f;
+    text-decoration: none;
+}
+footer span a:hover{
+    text-decoration: underline;
+}
 
 
 /*  -------responsive media query------ */
@@ -616,7 +692,8 @@ teams .carousel .card:hover .box{
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
-    .skills .skills-content .column{
+    .skills .skills-content .column,
+    .contact .contact-content .column{
         width: 100%;
         margin-bottom: 35px;
     }

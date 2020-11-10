@@ -19,7 +19,9 @@
 
     <!-- owlcarousel -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
+    
+    <!-- typing animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 </head>
 <body>
@@ -40,19 +42,21 @@
             </nav>
         </div>
     </div> -->
-
+    <div class="scroll-up-btn">
+        <i class="fa fa-toggle-up"></i>
+    </div>
     <nav class="navbar">
         <div class="max-width">
             <div class="logo">
                 <a href="">Portf<span>olio</span></a>
             </div>
             <ul class="menu">
-                <li><a href="">HOME</a></li>
-                <li><a href="">ABOUT</a></li>
-                <li><a href="">SERVICE</a></li>
-                <li><a href="">SKILLS</a></li>
-                <li><a href="">TERMS</a></li>
-                <li><a href="">CONTACT</a></li>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#service">SERVICE</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#teams">TERMS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
                 
             </ul>
             <div class="menu-btn">
@@ -255,28 +259,35 @@
                 <div class="column right">
                     <div class="text">Message me</div>
                     <form action="">
-                        <div class="field">
+                        <div class="fields">
                             <div class="field name">
                                 <input type="text" placeholder="Name" required>
                             </div>
                             <div class="field name">
                                 <input type="email" placeholder="Email" required>
                             </div>
-                            <div class="field">
-                                <input type="text" placeholder="Subject" required>
-                            </div>
-                            <div class="field textarea">
-                                <textarea cols="30" rows="10" placeholder="Describe project.." required></textarea>
-                            </div>
-                            <div class="button">
-                                <button type="submit">Send message</button>
-                            </div>
                         </div>
+                        <div class="field">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="field textarea">
+                            <textarea cols="30" rows="10" placeholder="Describe project.." required></textarea>
+                        </div>
+                        <div class="button">
+                            <button type="submit">Send message</button>
+                        </div>
+                        
                     </form>
                 </div>
             </div>  
         </div>  
     </section>>
+
+    <!-- footer -->
+
+    <footer>
+        <span>Created By <a href="">CodingGalaxy</a> | <span calss="fa fa-copyright"></span> 2020 All rights reserved.</span>
+    </footer>
             <!-- Link JS file -->
 <script src="script.js"></script>         
 </body>
