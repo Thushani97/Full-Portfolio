@@ -88,7 +88,7 @@ html{
 /* related to jQuery file */
 .navbar.sticky .logo a span{
     /* Change the color */
-    color: rgb(209, 143, 1);
+    color: rgb(209, 1, 1);
 }
 
 .navbar .menu li{
